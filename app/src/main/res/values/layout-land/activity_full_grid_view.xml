@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_full_grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shopping.FullGridView">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <include layout="@layout/footer"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgfull"
+        android:background="@drawable/border"/>
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="240dp"
+        android:background="#ffb9b9b9" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="260dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Offer 40%"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/offer"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price 450 "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/price"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/imglike"
+                    android:src="@drawable/ic_favorite_border_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:id="@+id/like"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="80dp"/>
+            </RelativeLayout>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/colorAccent"
+                android:numStars="5"
+                android:stepSize="2.5"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:rating="2.0" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/btnaddtocart"
+                    android:background="@color/white"
+                    android:text="Add to Cart"
+                    android:layout_below="@id/imgfull"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/btnbuy"
+                    android:background="@drawable/round_btn"
+                    android:text="Buy"
+                    android:layout_below="@id/imgfull"
+                    android:layout_marginLeft="300dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rightreseved"
+                    android:layout_below="@id/btnaddtocart"
+                    android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+                    android:textColor="#000000"
+                    android:layout_below="@id/rightreseved"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="65dp"
+                    android:textSize="13sp" />
+
+
+
+
+            </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    </RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TableLayout
+            android:id="@+id/amortization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="#FFF">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="loginid"
+                    android:gravity="center"
+                    android:id="@+id/txt_sslogid" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="topupid"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_sstopid" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_ssname" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="amount"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_ssamt" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="tds"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/txt_sstds" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="admin"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_ssadmin" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Net Pay"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_ssnetpay" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+       </LinearLayout>
+
+</RelativeLayout>

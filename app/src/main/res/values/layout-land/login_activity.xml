@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+      <LinearLayout
+
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          >
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fillViewport="false"
+              android:layout_weight="0.48">
+
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+                  <ImageView
+                      android:id="@+id/imageView1"
+                      android:layout_width="match_parent"
+                      android:layout_height="90dp"
+                      android:gravity="center"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:src="@drawable/ic_app" />
+                  <TextView
+                      android:id="@+id/textView1"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"
+                      android:text="welcome"
+                      android:gravity="center"
+                      android:textAppearance="?android:attr/textAppearanceLarge"
+                      android:textColor="#fff"
+                      android:textSize="25dp"
+                      android:textStyle="bold" />
+
+                  <LinearLayout
+                      android:id="@+id/LinearLayout2"
+                      android:layout_width="match_parent"
+                      android:layout_height="297dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_margin="40dp"
+                      android:background="@drawable/one_side"
+                      android:orientation="vertical"
+                      android:layout_weight="0.05">
+
+                      <EditText
+                          android:id="@+id/user_ids"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_marginTop="15dp"
+                          android:background="@drawable/input_selector"
+                          android:hint="Your Id"
+                          android:singleLine="true"
+                          android:imeOptions="actionNext"
+                          android:padding="5dp" />
+
+                      <EditText
+                          android:id="@+id/userpswd"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_marginTop="16dp"
+                          android:inputType="textPassword"
+                          android:imeOptions="actionNext"
+                          android:background="@drawable/input_selector"
+                          android:hint="Your Password"
+                          android:padding="5dp" />
+
+
+                      <EditText
+                          android:id="@+id/usr_mobile_no"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:layout_marginTop="16dp"
+                          android:inputType="number"
+                          android:maxLength="10"
+                          android:background="@drawable/input_selector"
+                          android:hint="Your Mobile Number"
+                          android:padding="5dp" />
+
+                      <Button
+                          android:id="@+id/btnlogin"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/round_btn"
+                          android:text="Login"
+                          android:layout_marginTop="16dp"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:textColor="#fff" />
+
+                      <Button
+                          android:id="@+id/btnnewreg"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/search_btn_sel"
+                          android:layout_marginTop="16dp"
+                          android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp"
+                          android:text="New Register"
+                          android:textColor="#fff" />
+
+                  </LinearLayout>
+              </LinearLayout>
+          </ScrollView>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:padding="5dp"
+              android:textSize="12dp"
+              android:textColor="#fff"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="All Rights Reserved Designed By Swaliya Softech"
+              android:id="@+id/textView2" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/container_toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <include
+              android:id="@+id/toolbar"
+              layout="@layout/toolbar">
+          </include>
+          </LinearLayout>
+      </LinearLayout>
+  </ScrollView>
+</LinearLayout>
+

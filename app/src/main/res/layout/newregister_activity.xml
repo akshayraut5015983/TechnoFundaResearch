@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_weight="0.1"
+        android:background="#ffe5e5e5">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_background"
+                android:padding="8.0dip"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5.0dip"
+                    android:text="Fill Your All Details"
+                    android:textColor="#ff393939"
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffb9b9b9" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to choose your pin"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/button_pin"
+                    android:layout_gravity="right" />
+
+                <EditText
+                    android:id="@+id/editrefid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/input_selector"
+                    android:ems="10"
+                    android:hint="Referenced Id"
+                    android:padding="10dp"
+                    android:textColorHint="#bbbbbb"/>
+                <Spinner
+                    android:id="@+id/Groups"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/btn_dropdown"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColorHint="#cccccc" />
+
+                <EditText
+                    android:id="@+id/editname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/input_selector"
+                    android:hint="Guest Name"
+                    android:padding="10dp"
+                    android:textColorHint="#bbbbbb" />
+
+                <EditText
+                    android:id="@+id/editmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_selector"
+                    android:hint="Mobile Number"
+                    android:padding="10dp"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textColorHint="#bbbbbb" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PAN"
+                    android:paddingLeft="10dp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_selector"
+                    >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:id="@+id/panyes"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:id="@+id/panno"
+                        />
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/edtmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_selector"
+                    android:hint="Email"
+                    android:padding="10dp"
+                    android:maxLength="30"
+                    android:textColorHint="#bbbbbb" />
+
+                <Spinner
+                    android:id="@+id/state_groups"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/btn_dropdown"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColorHint="#cccccc" />
+                <Spinner
+                    android:id="@+id/district_groups"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/btn_dropdown"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColorHint="#cccccc" />
+                <EditText
+                    android:id="@+id/edtcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_selector"
+                    android:hint="Enter City"
+                    android:padding="10dp"
+                    android:maxLength="10"
+                    android:textColorHint="#bbbbbb" />
+
+                <EditText
+                    android:id="@+id/edit_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="6dp"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/input_selector"
+                    android:hint="Your pin"
+                    android:padding="10dp"
+                    android:textColorHint="#bbbbbb"/>
+
+                <EditText
+                    android:id="@+id/edit_planshow_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/input_selector"
+                    android:hint="Planshow Id Optional"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:textColorHint="#bbbbbb" />
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    style="@style/DefaultButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/round_btn"
+                    android:padding="14dp"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+                <TextView
+                    android:id="@+id/term_cond_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Terms and Condition"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/redDark"
+                    android:textSize="11sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rightreseved"
+                    android:text="All Rights Reserved @ Techno Funda Research"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="9sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+                    android:textColor="#000000"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

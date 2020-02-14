@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.technofunda">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name="com.app.technofunda.AdminActivity"></activity>
+        <activity
+            android:name="com.app.technofunda.performance.PerformanceActivity"
+            android:label="Performance"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.Splashscreen"
+            android:label="TechnofundaResearch ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.technofunda.ethiqs.LoginActivity"
+            android:label="TechnoFundaResearch"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.NewRegistration"
+            android:label="@string/reg"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.NewRegistrationUser"
+            android:label="@string/reg"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.addvertise.AdvertiseActivitys"
+            android:label="@string/add"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.addvertise.AdvertiseDetialsActivity"
+            android:label="@string/addetials"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.myincome.IncomeStartActivity"
+            android:label="@string/myincome"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.myincome.BinaryIncomeActivity"
+            android:label="@string/binaryincome"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.myincome.IncomeHistoryActivity"
+            android:label="@string/incomehistory"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.myincome.DirectIncomeActivity"
+            android:label="@string/directncome"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.myincome.ReferralIncomeActivity"
+            android:label="@string/referralincome"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.myincome.SSIncomeActivity"
+            android:label="@string/ssincome"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ewallet.EwalletMasterStartActivity"
+            android:label="@string/ewallets"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ewallet.EwalletActivitys"
+            android:label="@string/ewallet"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ewallet.EwalletPaymentActivitys"
+            android:label="@string/ewallet_payment"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ewallet.PinTransferActivity"
+            android:label="@string/pin_transfer"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.ewallet.PointEwallet"
+            android:label="@string/pewallet"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.profile.ProfileActivity"
+            android:label="@string/profile"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.team.TeamActivitys"
+            android:label="@string/team"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.direct.DirectActivitys"
+            android:label="@string/direct"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.refer.ReferActivity"
+            android:label="@string/refer"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.newsupdate.NewsUpdateActivity"
+            android:label="@string/newsupdate"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.newsupdate.NewsUpdateDetialsActivity"
+            android:label="@string/newsupdatedetials"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.recharge.RechargeStartActivity"
+            android:label="@string/recharge"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.recharge.MultiRechargeActivity"
+            android:label="@string/recharge"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.recharge.RechargeListActivity"
+            android:label="@string/recharge_list"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.WebsiteActivity"
+            android:label="TechnoFundaResearch"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.TermsCondition"
+            android:label="ethiqs"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.planshow.PlanshowStartActivity"
+            android:label="@string/planshow"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.planshow.PlanshowListActivity"
+            android:label="@string/planshow_list"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.planshow.PlanShowActivity"
+            android:label="@string/planshow"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.planshow.PlanshowMobileActivity"
+            android:label="@string/plans"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.planshow.PlanshowOTPActivity"
+            android:label="@string/planshowotp"
+            android:theme="@style/MyMaterialTheme" />
+        <!--  <activity
+              android:name=".epaysystem.EpaySystemActivity"
+              android:label="@string/epay"
+              android:theme="@style/MyMaterialTheme" />-->
+        <activity
+            android:name="com.app.technofunda.topuplist.TopupStartActivity"
+            android:label="@string/topup_master"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.NewsAndUpdateActivity"
+            android:label="News And Update"
+            android:theme="@style/MyMaterialTheme" />
+
+        <activity
+            android:name=".ChatDetailsActivity"
+            android:label="Chat Details"
+            android:theme="@style/MyMaterialTheme" />
+
+        <activity
+            android:name="com.app.technofunda.topuplist.TopupidActivity"
+            android:label="@string/topup_id"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.topuplist.TopUpListActivity"
+            android:label="@string/topup_list"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.frontview"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.Shopping"
+            android:label="Shopping"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.shopping_details"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.CurrentLocation"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.booking.flight_booking"
+            android:label="Booking"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.utility.utility_navigation"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.category_list"
+            android:label="Shop by Category"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.grid_categery"
+            android:label="All Product"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.BabyCare"
+            android:label="All Product"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.BeautyAndHygine"
+            android:label="All Product"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.FoodGrains"
+            android:label="All Product"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.FullGridView"
+            android:label="Product Details"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.HomeAppilance"
+            android:label="Home Appilance Details"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.shopping.ShowCart"
+            android:label="Cart"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.ReferLinkActivity"
+            android:label="Research coll" />
+        <activity
+            android:name="com.app.technofunda.pinmaster.Pinmaster"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.marchantPay.Front_marchant"
+            android:label="Marchant Pay"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.utility.Utility"
+            android:label="@string/title_activity_utility"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".ethiqs.TrendingActivity"
+            android:label="Trending"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".utility.ChatActivity"
+            android:label="Chat"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.utility.Gallery"
+            android:label="@string/title_activity_utility"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.shopping.Shopping_site"
+            android:label="Shopping"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name="com.app.technofunda.ethiqs.web" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.Referal_Master"
+            android:label="Referal Master"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.shopping.Nav_Shopping"
+            android:label="Shopping"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ethiqs.PinRegistrationActivity"
+            android:label="Pin Generation"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.team.Team_main"
+            android:label="Team"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.myincome.Income_report"
+            android:label="Income Report"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.app.technofunda.ewallet.Income_wallet"
+            android:label="Income wallet"
+            android:theme="@style/MyMaterialTheme" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

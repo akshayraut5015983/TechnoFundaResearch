@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".shopping.category_list">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <include layout="@layout/footer"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:id="@+id/listlayout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop By Catogery"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"
+            android:padding="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ListView
+            android:id="@+id/category_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/gray_f">
+        </ListView>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/listlayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rightreseved"
+            android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+            android:textColor="#000000"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/footer"/>
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="55dp"
+        android:layout_above="@+id/footer"
+        android:layout_weight="0.1">
+
+        <Spinner
+            android:id="@+id/date_groups"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_dropdown"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColorHint="#cccccc" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TableLayout
+                    android:id="@+id/amortization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:background="@color/blue_facebook1">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:text="LoginID"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/textView7" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="Match Pair"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/textView11" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="Amount"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/textView12" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Payble Pair"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Payble Amount"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Tds"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Admin"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="Net Pay"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:id="@+id/textView14" />
+                    </TableRow>
+                    <ListView
+                        android:id="@+id/binary_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical|horizontal"
+                        android:divider="#b5b5b5"
+                        android:background="@drawable/list_selector"
+                        android:dividerHeight="1dp"
+                        >
+
+                    </ListView>
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightreseved"
+        android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="75dp"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+        android:textColor="#000000"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="13sp" />
+</RelativeLayout>

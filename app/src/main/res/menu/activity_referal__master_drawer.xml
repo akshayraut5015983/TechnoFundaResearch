@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/news"
+            android:title="@string/newsupdate" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+    </group>
+
+    <item android:title="@string/ewallets">
+        <menu>
+            <item
+                android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+                android:title="@string/inewallet"
+                android:id="@+id/nav_incomewallet"/>
+            <item
+                android:icon="@drawable/pewallet"
+                android:title="@string/pewallet"
+                android:id="@+id/nav_pwallet"/>
+            <item
+                android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+                android:title="@string/ewallet_payment"
+                android:id="@+id/nav_ewallet_payment"/>
+            <item
+                android:icon="@drawable/epays"
+                android:title="@string/epay"
+                android:id="@+id/nav_epay"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_item_team">
+        <menu>
+            <item
+                android:icon="@drawable/direct"
+                android:title="@string/mydirect"
+                android:id="@+id/nav_direct"/>
+            <item
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="@string/totalteam"
+                android:id="@+id/nav_team"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/myincome">
+        <menu>
+            <item
+                android:icon="@drawable/incomes"
+                android:title="@string/binaryincome"
+                android:id="@+id/nav_binaryincome"/>
+            <item
+                android:icon="@drawable/incomes"
+                android:title="@string/directncome"
+                android:id="@+id/nav_directincome"/>
+            <item
+                android:icon="@drawable/incomes"
+                android:title="@string/referralincome"
+                android:id="@+id/nav_referalincome"/>
+            <item
+                android:icon="@drawable/incomes"
+                android:title="@string/ssincome"
+                android:id="@+id/nav_ssincome"/>
+            <item
+                android:icon="@drawable/incomes"
+                android:title="@string/incomehistory"
+                android:id="@+id/nav_incomehistory"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_item_registration">
+        <menu>
+            <item
+                android:icon="@drawable/ic_group_add_black_24dp"
+                android:title="@string/join_now"
+                android:id="@+id/nav_join"/>
+            <item
+                android:icon="@drawable/references"
+                android:title="@string/refers"
+                android:id="@+id/nav_refer"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/topup_master">
+        <menu>
+            <item
+                android:icon="@drawable/profile"
+                android:title="@string/topup"
+                android:id="@+id/nav_topup"/>
+        </menu>
+    </item>
+    <item
+        android:icon="@drawable/logout"
+        android:title="Logout"
+        android:id="@+id/nav_logout">
+
+    </item>
+
+</menu>

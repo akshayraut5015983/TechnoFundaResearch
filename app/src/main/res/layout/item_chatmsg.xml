@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lefydesign"
+        android:orientation="vertical"
+        android:paddingTop="3dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:padding="3dp"
+            android:text="subject"
+            android:textColor="@color/gray_7"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="admin"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvID"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:text="msdfdfdffdsfg"
+            android:textColor="@color/gray_7" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/layoutnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/lefydesignnew"
+        android:orientation="vertical"
+        android:paddingTop="3dp">
+
+
+        <TextView
+            android:id="@+id/tvIDnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="admin"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+
+        <TextView
+            android:id="@+id/tvMsgnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvID"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="msdfdfdffdsfg"
+            android:textColor="@color/gray_7" />
+    </LinearLayout>
+</LinearLayout>

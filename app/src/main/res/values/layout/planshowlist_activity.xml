@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/gray_d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/amortization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:background="@color/blue_facebook1">
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="PresenterID"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textView9" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="NewID"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textnewid" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="PSID"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textpsid" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="PS Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textpsname" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="PS Email"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textpsemail" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="PS City"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textpscity" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Reg.Date"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textpsregdate" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="PS Mobile"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textpsmobile" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:layout_weight="0.97"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/textstatus" />
+
+                </TableRow>
+                <ListView
+                    android:id="@+id/planshow_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical|horizontal"
+                    android:divider="#b5b5b5"
+                    android:background="@drawable/list_selector"
+                    android:dividerHeight="1dp"/>
+            </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Rights Reserved Designed By Swaliya Softech"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

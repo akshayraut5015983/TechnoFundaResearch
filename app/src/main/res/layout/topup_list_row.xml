@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/amortization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:background="#FFF">
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="ID"
+                        android:gravity="center"
+                        android:id="@+id/txt_topup_id" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txt_topup_name" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txt_topup_date" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Amount"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txt_topup_amount" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pin Value"
+                        android:paddingLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/txt_topup_pv" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>

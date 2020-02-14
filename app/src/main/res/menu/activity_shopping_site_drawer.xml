@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="Shop For"
+    >
+    <menu>
+        <item android:title="Offers"
+            android:id="@+id/nav_offer"
+            android:icon="@drawable/round">
+
+        </item>
+        <item android:title="Women"
+            android:id="@+id/nav_oilmasala"
+            android:icon="@drawable/round">
+
+        </item>
+        <item android:title="Men"
+            android:id="@+id/nav_foodgrain"
+            android:icon="@drawable/round">
+
+        </item>
+        <item android:title="Kids"
+            android:id="@+id/nav_beautyhygine"
+            android:icon="@drawable/round">
+
+        </item>
+        <item android:title="Home and Living"
+            android:id="@+id/nav_cleanhousehold"
+            android:icon="@drawable/round">
+
+        </item>
+    </menu>
+</item>
+    <item android:title="Explore">
+        <menu>
+            <item
+                android:id="@+id/nav_sport"
+                android:title="Sports"
+                android:icon="@drawable/round"/>
+            <item
+                android:id="@+id/nav_gifts"
+                android:title="Gifts " android:icon="@drawable/round"/>
+
+            <item android:title="Deal of Day"
+                android:id="@+id/nav_deal"
+                android:icon="@drawable/round">
+            </item>
+        </menu>
+    </item>
+
+</menu>

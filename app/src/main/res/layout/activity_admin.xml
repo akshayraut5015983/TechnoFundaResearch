@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_above="@+id/footer"
+        android:layout_weight="0.1"
+        android:background="@drawable/grave">
+        <!--android:background="#ffffff"-->
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tfrlogo"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <!--android:background="#3E4095"-->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7.0dip"
+                android:layout_marginTop="10dp"
+                android:text="ADMIN SIGNIN"
+                android:textColor="#ffffff"
+                android:textSize="18.0sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/user_ids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/input_selector"
+                android:hint="Admin Id"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/userpswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                android:background="@drawable/input_selector"
+                android:hint="Admin Password"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/usr_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:background="@drawable/input_selector"
+                android:hint="Admin Mobile Number"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnadminlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DD8038"
+                android:text="Adimin Login"
+                android:layout_margin="15dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="All Rights Reserved Designed By Swaliya Softech"
+            android:gravity="center"
+            android:background="#DD8038"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

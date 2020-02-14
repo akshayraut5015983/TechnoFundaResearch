@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp">
+
+        <TableLayout
+            android:id="@+id/amortization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="#FFF">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_ppid" />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_newid" />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_psid" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_psname" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_psemail" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_pscity" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_psregdate" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_psmobile" />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="New Text"
+                    android:layout_weight="0.97"
+                    android:textColor="@color/black"
+                    android:id="@+id/text_psstatus" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+</LinearLayout>

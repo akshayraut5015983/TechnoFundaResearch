@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <include layout="@layout/footer"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_login_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5.0dip"
+                android:text="Fill Your All Details"
+                android:textColor="#ff393939"
+                android:textSize="18.0sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Pin: "
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/total_apin"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pintrans_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_selector"
+                android:layout_marginTop="5dp"
+                android:hint="Transfer ID"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/pintrans_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_selector"
+                android:layout_marginTop="5dp"
+                android:focusable="false"
+                android:hint="Transfer Name"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/transpinnam_gps"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/btn_dropdown"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColorHint="#cccccc" />
+
+            <EditText
+                android:id="@+id/transpinpoint_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_selector"
+                android:layout_marginTop="5dp"
+                android:focusable="false"
+                android:hint="Pin Point"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/transpinamount_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_selector"
+                android:layout_marginTop="5dp"
+                android:focusable="false"
+                android:inputType="number"
+                android:hint="Pin Amount"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/no_pin_trans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_selector"
+                android:layout_marginTop="5dp"
+                android:hint="No. of Transfer Pins"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btntran_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:padding="10dp"
+                android:text="Transfer"
+                android:gravity="center"
+                android:textColor="#fff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rightreseved"
+                android:text="All Rights Reserved @ SRS Marketing"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="9sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+                android:textColor="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

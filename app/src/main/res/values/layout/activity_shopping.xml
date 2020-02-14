@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shopping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shopping.Shopping">
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp">
+               <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="   Shop by category  "
+                   android:background="@drawable/round_btn"
+                   android:textAllCaps="false"
+                   android:id="@+id/shopbycategory"/>
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="Search Product here..."
+                   android:backgroundTint="#BA4A00"
+                   android:drawableLeft="@android:drawable/ic_menu_search"
+                   android:inputType="text"
+                   android:padding="10dp"
+                   android:id="@+id/search"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="#4876D7C4">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Hello,"
+                           android:textSize="20sp"
+                           android:textStyle="bold"
+                           android:id="@+id/hello"
+                           android:layout_margin="10dp"/>
+                       <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Sign in"
+                           android:textAllCaps="false"
+                           android:background="@drawable/round_btn"
+                           android:layout_marginLeft="320dp"
+                           />
+                   </RelativeLayout>
+                   <ViewFlipper
+                       android:id="@+id/viewflipper"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:autoStart="true"
+                       android:flipInterval="1500" >
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/banner"
+                       android:layout_marginTop="20dp"
+                       android:background="#1076D7C4"
+                       android:id="@+id/imageshop" />
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/womensshopping"
+                           android:layout_marginTop="20dp"
+                           android:background="#1076D7C4"
+                           />
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/boyshopping"
+                           android:layout_marginTop="30dp"
+                           android:background="#1076D7C4"
+                          />
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/home"
+                           android:layout_marginTop="30dp"
+                           android:background="#1076D7C4" />
+
+                   </ViewFlipper>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="200dp"
+                           android:paddingTop="30dp"
+                           android:paddingLeft="50dp"
+                           android:paddingRight="40dp"
+                           android:textStyle="bold"
+                           android:shadowColor="@color/black"
+                           android:textColor="@color/black"
+                           android:text="We offer quality in great cost"
+                           android:textSize="20sp"/>
+                   </RelativeLayout>
+
+               </RelativeLayout>
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#4876D7C4">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Latest Products"
+                       android:textSize="22sp"
+                       android:layout_marginTop="10dp"
+                       android:id="@+id/txtproduct"
+                       android:paddingLeft="10dp"
+                       android:textStyle="bold"/>
+
+                   <Button
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="View all"
+                       android:textAllCaps="false"
+                       android:layout_marginLeft="340dp"
+                       android:background="@drawable/round_btn"
+                       android:id="@+id/btnviewall"/>
+               </RelativeLayout>
+           </LinearLayout>
+
+
+           <HorizontalScrollView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/rr">
+                       <View
+                           android:layout_width="1.5dip"
+                           android:layout_height="380dp"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginLeft="200dp"
+                           android:background="@color/gray">
+
+                       </View>
+                       <ImageView
+                           android:layout_width="200dp"
+                           android:layout_height="380dp"
+                           android:id="@+id/mobilephone"
+                           android:src="@drawable/mobilephone"
+                           android:layout_alignParentTop="true"
+                           android:layout_alignParentRight="true"
+                           android:layout_alignParentEnd="true" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Samsung Pro"
+                           android:textColor="@color/black"
+                           android:textSize="15sp"
+                           android:layout_marginLeft="50dp"
+                           android:layout_below="@id/mobilephone"/>
+
+
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <View
+                           android:layout_width="1.5dip"
+                           android:layout_height="380dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@color/gray"
+                           android:layout_marginLeft="200dp"
+                           />
+                       <ImageView
+                           android:layout_width="200dp"
+                           android:layout_height="380dp"
+                           android:id="@+id/watch"
+                           android:src="@drawable/watch"
+                           android:layout_weight="1" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Titen HandWatch"
+                           android:textSize="15sp"
+                           android:textColor="@color/black"
+                           android:layout_marginLeft="50dp"
+                           android:layout_below="@id/watch"/>
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <View
+                           android:layout_width="1.5dip"
+                           android:layout_height="380dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@color/gray"
+                           android:layout_marginLeft="200dp"
+                          />
+                       <ImageView
+                           android:layout_width="200dp"
+                           android:layout_height="380dp"
+                           android:id="@+id/sound"
+                           android:src="@drawable/sounds"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Home Sounds"
+                           android:textColor="@color/black"
+                           android:textSize="15sp"
+                           android:layout_marginLeft="50dp"
+                           android:layout_below="@id/sound"/>
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <View
+                           android:layout_width="1.5dip"
+                           android:layout_height="380dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@color/gray"
+                           android:layout_marginLeft="200dp"
+                            />
+                       <ImageView
+                           android:layout_width="200dp"
+                           android:layout_height="320dp"
+                           android:id="@+id/dress"
+                           android:src="@drawable/dress"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Panjabi Dress Material"
+                           android:textSize="15sp"
+                           android:textColor="@color/black"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginTop="60dp"
+                           android:layout_below="@id/dress"/>
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <View
+                           android:layout_width="1.5dip"
+                           android:layout_height="360dp"
+                           android:background="@color/gray"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginLeft="220dp"
+                            />
+                       <ImageView
+                           android:layout_width="200dp"
+                           android:layout_height="360dp"
+                           android:id="@+id/sofa"
+                           android:layout_marginLeft="20dp"
+                           android:src="@drawable/sofa"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Sofa Set"
+                           android:textSize="15sp"
+                           android:textColor="@color/black"
+                           android:layout_marginLeft="80dp"
+                           android:layout_below="@id/sofa"/>
+                   </RelativeLayout>
+               </LinearLayout>
+           </HorizontalScrollView>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:background="#4876D7C4">
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <include layout="@layout/footer"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/footer"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_view_f" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/blue"
+            android:id="@+id/view_first"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_view_s" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/blue"
+            android:id="@+id/view_second"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_view_t" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/blue"
+            android:id="@+id/view_third"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_view_fr" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/blue"
+            android:id="@+id/view_frouth"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="New Text"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_view_fith" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/blue"
+            android:id="@+id/view_fifth"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightreseved"
+        android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+        android:textColor="#000000"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp" ></TextView>
+
+</RelativeLayout>

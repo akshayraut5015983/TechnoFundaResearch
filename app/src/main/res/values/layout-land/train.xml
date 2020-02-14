@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <include layout="@layout/footer"/>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:layout_marginTop="55dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/railwaybooking"/>
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_margin="20dp">
+
+                  <RadioGroup
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="20dp"
+                      android:id="@+id/radiogrp_book">
+                      <RadioButton
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Book Ticket"
+                          android:id="@+id/radioone_way"/>
+                      <RadioButton
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Check PNR Status"
+                          />
+                  </RadioGroup>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="From"
+                      android:textColor="@color/black"
+                      android:textSize="20sp"
+                      android:paddingLeft="30dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_below="@id/radiogrp_book"
+                      />
+                  <EditText
+                      android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/radiogrp_book"
+                      android:layout_marginLeft="100dp"
+                      android:id="@+id/edtfrom"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="To"
+                      android:textColor="@color/black"
+                      android:textSize="20sp"
+                      android:layout_marginLeft="200dp"
+                      android:paddingLeft="30dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_below="@id/radiogrp_book"
+                      />
+                  <EditText
+                      android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/radiogrp_book"
+                      android:layout_marginLeft="260dp"
+                      android:id="@+id/edtto"></EditText>
+                  <View
+                      android:layout_width="fill_parent"
+                      android:layout_height="1.0dip"
+                      android:background="#ffb9b9b9"
+                      android:layout_margin="20dp"
+                      android:layout_below="@id/edtfrom"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Departure Date"
+                      android:textSize="20sp"
+                      android:paddingTop="40dp"
+                      android:paddingLeft="30dp"
+                      android:id="@+id/iddepart"
+                      android:layout_below="@id/edtfrom"/>
+                  <EditText
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/edtfrom"
+                      android:layout_marginLeft="180dp"
+                      android:layout_marginTop="40dp"
+                      android:id="@+id/edtdepart"
+                      />
+                  <View
+                      android:layout_width="fill_parent"
+                      android:layout_height="1.0dip"
+                      android:background="#ffb9b9b9"
+                      android:layout_marginTop="30dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_below="@id/iddepart"
+                      />
+                  <Button
+                      android:layout_width="320dp"
+                      android:layout_height="wrap_content"
+                      android:text="Search Trains"
+                      android:background="@drawable/round_btn"
+                      android:layout_below="@id/iddepart"
+                      android:layout_marginTop="100dp"
+                      android:layout_centerHorizontal="true"
+                      android:textAllCaps="false"
+                      android:textSize="18sp"/>
+              </RelativeLayout>
+
+          </LinearLayout>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/rightreseved"
+              android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+              android:layout_gravity="center_horizontal"
+              android:textColor="#000000"
+              android:textSize="13sp" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+              android:textColor="#000000"
+              android:layout_gravity="center_horizontal"
+              android:textSize="13sp" />
+      </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/amortization"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TableRow
+                android:background="#FFF">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="loginid"
+                    android:gravity="center"
+                    android:id="@+id/txt_rlogid"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="direct"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_rdirect" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="amount"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_ramt" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="income"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_rincome" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="tds"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_rtds" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="admin"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_radmin" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Net Pay"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_rnetpay" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+    </RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/container_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+</LinearLayout>
+
+<LinearLayout
+        android:background="@color/gray_d"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+<ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/scrollView2">
+<LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/card_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Option:"
+        android:textStyle="bold"
+        android:textColor="@color/list_background_pressed"
+        android:id="@+id/textView3" />
+
+    <RadioGroup
+       android:id="@+id/choose_option"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/choose">
+
+  <RadioButton
+      android:id="@+id/radiobtn_whatsapp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/whatsapp"/>
+
+  <RadioButton
+      android:id="@+id/radiobtn_sms"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sms"
+      android:checked="false"/>
+
+  </RadioGroup>
+
+<LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:layout_marginTop="5dp"
+      android:weightSum="1">
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:gravity="center"
+      android:text="To"
+      android:layout_marginLeft="5dp"
+      android:id="@+id/textView8"
+      android:textStyle="bold"
+      android:textSize="20dp" />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:inputType="number"
+       android:background="@drawable/input_selector"
+       android:maxLength="10"
+       android:padding="10dp"
+       android:hint="Mobile number of your friend"
+       android:id="@+id/edit_ref_mobile"
+       android:gravity="left" />
+
+</LinearLayout>
+<Spinner
+      android:id="@+id/refer_postion"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:layout_weight="0.05"
+      android:background="@drawable/btn_dropdown"
+      android:gravity="center_vertical"
+      android:padding="10dp"
+      android:textColorHint="#cccccc" />
+   <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="25dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginRight="2dp"
+      android:layout_marginBottom="10dp"
+      android:background="@drawable/round_btn"
+      android:textColor="#fff"
+      android:text="Generate"
+      android:id="@+id/but_gen_refer" />
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightreseved"
+        android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="13sp" />
+</LinearLayout>

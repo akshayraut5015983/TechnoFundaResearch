@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffe5e5e5"
+            android:layout_above="@+id/footer"
+            android:layout_weight="0.1"
+            android:padding="8.0dip">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5.0dip"
+                        android:text="Fill Your All Details"
+                        android:textColor="#ff393939"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="#ffb9b9b9" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp">
+                        <EditText
+                            android:id="@+id/editrefid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:ems="10"
+                            android:hint="Referenace Id"
+                            android:padding="10dp"
+                            android:textColorHint="#bbbbbb"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/Groups"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.05"
+                        android:background="@drawable/btn_dropdown"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:textColorHint="#cccccc" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/editname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:hint="Geust Name"
+                            android:padding="10dp"
+                            android:textColorHint="#bbbbbb" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/state_groups"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.05"
+                        android:background="@drawable/btn_dropdown"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:textColorHint="#cccccc" />
+                    <Spinner
+                        android:id="@+id/district_groups"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.05"
+                        android:background="@drawable/btn_dropdown"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:textColorHint="#cccccc" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <EditText
+                            android:id="@+id/editmobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Your Mobile Number"
+                            android:padding="10dp"
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:textColorHint="#bbbbbb" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp">
+                        <EditText
+                            android:id="@+id/edit_planshow_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Planshow Id Optional"
+                            android:padding="10dp"
+                            android:visibility="gone"
+                            android:textColorHint="#bbbbbb" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        style="@style/DefaultButtonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/round_btn"
+                        android:padding="14dp"
+                        android:text="Submit"
+                        android:gravity="center"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rightreseved"
+            android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+            android:textColor="#000000"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentBottom="true"
+             android:layout_gravity="center_horizontal"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shopping.Nav_Shopping"
+    tools:showIn="@layout/app_bar_nav__shopping">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/ic_search_black_24dp"
+            />
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:hint="Search here..."
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColorLink="#ffffff"
+            android:id="@+id/edtsearch"
+            android:layout_marginLeft="45dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oil And Masala"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/nav_oilmasala"
+                    android:textColor="#ffffff"/>
+                <View
+                    android:layout_width="2.0dp"
+                    android:layout_height="30dp"
+                    android:background="#96000000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Grains"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/nav_foodgrain"
+                    android:textColor="#ffffff"/>
+                <View
+                    android:layout_width="2.0dp"
+                    android:layout_height="30dp"
+                    android:background="#96000000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beauty And Hygine"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/nav_beautyhygine"
+
+                    android:textColor="#ffffff"/>
+                <View
+                    android:layout_width="2.0dp"
+                    android:layout_height="30dp"
+                    android:background="#96000000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cleaning And Household"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/nav_cleanhousehold"
+                    android:paddingRight="15dp"
+                    android:textColor="#ffffff"/>
+                <View
+                    android:layout_width="2.0dp"
+                    android:layout_height="30dp"
+                    android:background="#96000000" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baby Care"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:id="@+id/nav_babycare"
+                    android:paddingRight="15dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nav_shopping"
+                    android:scaleType="centerCrop"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="100dp"
+                    android:background="#6FE081A7"
+                    android:text="Summer Offer All at 40% Off"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:padding="15dp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:id="@+id/container"
+                android:background="@drawable/box"
+                tools:context=".MainActivity_card">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

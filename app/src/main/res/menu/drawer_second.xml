@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/navigation_item_images"
+            android:icon="@drawable/ic_format_indent"
+            android:title="@string/newsupdate" />
+    </group>
+    <item android:title="Account Master">
+        <menu>
+            <item
+                android:id="@+id/navigation_profile"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/navigation_trend"
+                android:icon="@drawable/ic_content_paste_black_24dp"
+                android:title="Trending" />
+            <item
+                android:icon="@drawable/ic_rate_review_black_24dp"
+                android:title="Research Calls" />
+            <item
+                android:icon="@drawable/ic_note_black_24dp"
+                android:title="Performance" />
+        </menu>
+    </item>
+
+    <item android:title="About Us">
+        <menu>
+            <item
+                android:icon="@drawable/ic_exposure_plus_1_black_24dp"
+                android:title="Refer Link" />
+        </menu>
+    </item>
+    <item android:title="Other">
+        <menu>
+            <item
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="@string/nav_item_logout" />
+        </menu>
+    </item>
+</menu>

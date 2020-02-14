@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_front_marchant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".marchantPay.Front_marchant"
+    tools:showIn="@layout/app_bar_front_marchant">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="50dp"
+                android:orientation="horizontal"
+                android:background="#A3E4D7">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="22sp"
+                    android:text=" Tap to see your Wallet Balance"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:id="@+id/txthead"
+                    />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView5" >
+
+                <LinearLayout
+                    android:id="@+id/container_body"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/pay"
+                                    android:id="@+id/pay" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pay"
+                                    android:gravity="center"
+                                    android:layout_weight="0.10"
+                                    android:id="@+id/textreg" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/accept_money"
+                                    android:id="@+id/addmoney" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add money"
+                                    android:gravity="center"
+                                    android:layout_weight="0.10"
+                                    android:id="@+id/textrefer" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/passbook"
+                                    android:id="@+id/passbook" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Passbook"
+                                    android:layout_weight="0.10"
+                                    android:gravity="center"
+                                    android:id="@+id/textteam"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/addmoney"
+                                    android:id="@+id/accepttmoney" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Accept Payment"
+                                    android:layout_weight="0.10"
+                                    android:gravity="center"
+                                    android:id="@+id/textdirect"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/nearby"
+                                    android:id="@+id/nearby" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nearby"
+                                    android:layout_weight="0.10"
+                                    android:gravity="center"
+                                    android:id="@+id/textwallet"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:layout_width="90dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/addtobank"
+                                    android:id="@+id/addtobank" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add to Bank Account"
+                                    android:layout_weight="0.10"
+                                    android:gravity="center"
+                                    android:id="@+id/textworkingwallet"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#A3E4D7"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account_balance_black_24dp"
+                        android:layout_marginLeft="200dp"
+                        android:id="@+id/homewallet"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:layout_marginLeft="190dp"
+                        android:layout_below="@id/homewallet" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:id="@+id/log"
+                        android:src="@drawable/ic_power_settings_new_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:layout_marginLeft="140dp"
+                        android:layout_below="@id/log"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#fff"
+                android:layout_marginTop="30dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All Rights Reserved Designed By Swaliya Softech"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

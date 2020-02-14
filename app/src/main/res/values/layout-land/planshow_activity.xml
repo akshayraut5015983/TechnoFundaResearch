@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffe5e5e5"
+            android:padding="8.0dip"
+            android:layout_above="@+id/footer"
+            android:layout_weight="0.1"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_background"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5.0dip"
+                        android:text="Fill Your All Details"
+                        android:textColor="#ff393939"
+                        android:textSize="18.0sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="#ffb9b9b9" />
+
+
+                    <EditText
+                        android:id="@+id/your_sponcerid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/input_selector"
+                        android:hint="Planshow Presenter id"
+                        android:padding="10dp"
+                        android:textColorHint="#bbbbbb"/>
+
+                    <EditText
+                        android:id="@+id/your_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="6dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/input_selector"
+                        android:ems="10"
+                        android:hint="Geust Name"
+                        android:padding="10dp"
+                        android:textColorHint="#bbbbbb"/>
+
+                    <EditText
+                        android:id="@+id/your_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:focusable="false"
+                        android:background="@drawable/input_selector"
+                        android:hint="Your Mobile Number"
+                        android:padding="10dp"
+                        android:textColorHint="#bbbbbb"/>
+
+                    <EditText
+                        android:id="@+id/your_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/input_selector"
+                        android:hint="Your E-mail id"
+                        android:padding="10dp"
+                        android:textColorHint="#bbbbbb" />
+
+                    <EditText
+                        android:id="@+id/your_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/input_selector"
+                        android:hint="Your City Name"
+                        android:padding="10dp"
+                        android:textColorHint="#bbbbbb" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        style="@style/DefaultButtonText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/round_btn"
+                        android:padding="14dp"
+                        android:text="Submit"
+                        android:gravity="center"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Rights Reserved Designed By Swaliya Softech"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

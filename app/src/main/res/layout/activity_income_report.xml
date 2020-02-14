@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.technofunda.myincome.Income_report">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <include layout="@layout/footer" android:visibility="gone" />
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Ethiqs Logic Report"-->
+    <!--android:id="@+id/logic"-->
+    <!--android:background="@drawable/round_btn"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_marginTop="200dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:textSize="15sp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:textAllCaps="false"/>-->
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Ethiqs Magic Report"-->
+    <!--android:id="@+id/magic"-->
+    <!--android:background="@drawable/round_btn"-->
+    <!--android:padding="10dp"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:textSize="15sp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:layout_below="@id/logic"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:textAllCaps="false"/>-->
+
+</RelativeLayout>

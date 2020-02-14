@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1790A0</color>
+    <color name="colorPrimaryDark">#1790A0</color>
+    <color name="colorAccent">#584C50</color>
+    <color name="colorsky">#1faea6</color>
+
+    <color name="blackDemnim2">#252f36</color>
+    <color name="gray">#FFB3B3B3</color>
+    <color name="gray_f">#F0F0F0</color>
+    <color name="gray_d">#D0D0D0</color>
+    <color name="gray_7">#707070</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#E47833</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="blue_facebook1">#555658</color>
+    <color name="blue_facebook3">#dfe3ee</color>
+
+    <color name="red">#FF0000</color>
+    <color name="redDark">#E00504</color>
+
+    <color name="background_color">#e3e9ec</color>
+    <color name="chatListItemHints">#1A1F34</color>
+    <color name="list_item_title1">#fff</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#a71930</color>
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    <color name="srk_nodisable">#66cccc</color>
+    <color name="stripp">#258F8F</color>
+    <color name="srk_nod">#006666</color>
+</resources>

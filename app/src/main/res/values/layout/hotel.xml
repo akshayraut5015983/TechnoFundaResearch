@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <include layout="@layout/footer"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:layout_marginTop="55dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="200dp">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/hotelbooking"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:padding="20dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Search By"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"
+                       android:id="@+id/searchbytxt"/>
+                   <EditText
+                       android:layout_width="100dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="100dp"
+                       android:id="@+id/searchby"
+                       />
+                   <View
+                       android:layout_width="fill_parent"
+                       android:layout_height="1.0dip"
+                       android:background="#ffb9b9b9"
+                       android:layout_marginTop="30dp"
+                       android:layout_below="@id/searchby"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Check In"
+                       android:layout_below="@id/fromtxt"
+                       android:layout_marginLeft="10dp"
+                       android:id="@+id/checkinid"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"
+                       android:layout_marginTop="90dp"/>
+                   <EditText
+                       android:layout_width="100dp"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:layout_below="@id/checkinid"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Check Out"
+                       android:layout_below="@id/fromtxt"
+                       android:layout_marginLeft="200dp"
+                       android:id="@+id/checkoutid"
+                       android:textSize="20sp"
+                       android:textColor="@color/black"
+                       android:layout_marginTop="90dp"/>
+                   <EditText
+                       android:layout_width="100dp"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:layout_marginLeft="200dp"
+                       android:layout_below="@id/checkoutid"
+                       />
+                   <View
+                       android:layout_width="fill_parent"
+                       android:layout_height="1.0dip"
+                       android:background="#ffb9b9b9"
+                       android:layout_marginTop="70dp"
+                       android:layout_below="@id/checkoutid"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Room"
+                       android:layout_below="@id/checkoutid"
+                       android:layout_marginTop="80dp"
+                       android:id="@+id/roomid"/>
+                   <View
+                       android:layout_width="fill_parent"
+                       android:layout_height="1.0dip"
+                       android:background="#ffb9b9b9"
+                       android:layout_marginTop="50dp"
+                       android:layout_below="@id/roomid"
+                       />
+                   <Button
+                       android:layout_width="300dp"
+                       android:layout_height="wrap_content"
+                       android:text="Search Hotel"
+                       android:textAllCaps="false"
+                       android:layout_below="@id/roomid"
+                       android:layout_marginTop="80dp"
+                       android:textSize="18sp"
+                       android:layout_centerHorizontal="true"
+                       android:background="@drawable/round_btn"/>
+               </RelativeLayout>
+           </LinearLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rightreseved"
+               android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+               android:layout_alignParentBottom="true"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="0dp"
+               android:textColor="#000000"
+               android:textSize="13sp" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+               android:textColor="#000000"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="5dp"
+               android:layout_gravity="center_horizontal"
+               android:textSize="13sp" />
+
+       </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

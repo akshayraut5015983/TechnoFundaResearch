@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/amortization"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="20dp">
+
+            <TableRow
+                android:background="#FFF">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="level"
+                    android:gravity="center"
+                    android:id="@+id/txt_level" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="counts of id"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_countsid" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="PV"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_pv" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="tds"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/txt_tds" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="admin"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_admin" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Net Pay"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_netpay" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightreseved"
+        android:text="All Rights Reserved @ Ethiqs Spaces Limited"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered and Designed by Swaliya Softech Pvt.Ltd."
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="13sp" />
+
+</LinearLayout>

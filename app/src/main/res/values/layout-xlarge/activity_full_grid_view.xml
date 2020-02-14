@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_full_grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shopping.FullGridView">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:padding="20dp"
+        android:layout_margin="40dp"
+        android:id="@+id/imgfull"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="20dp"
+        android:background="#ffb9b9b9" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Offer 40%"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:id="@+id/offer"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price 450 "
+        android:textSize="38sp"
+        android:textStyle="bold"
+     android:id="@+id/price"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imglike"
+            android:src="@drawable/ic_favorite_border_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:id="@+id/like"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="20dp"
+        android:background="#ffb9b9b9" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/colorAccent"
+        android:numStars="5"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:stepSize="2.5"
+        android:rating="2.0" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnbuy"
+        android:textSize="25sp"
+        android:background="@drawable/round_btn"
+        android:text="Buy"
+        />
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="380dp"
+        android:background="#fff"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Rights Reserved Designed By Swaliya Softech"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </RelativeLayout>
+</LinearLayout>
